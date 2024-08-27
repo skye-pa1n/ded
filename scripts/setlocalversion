@@ -60,8 +60,8 @@ scm_version()
 	if test "$1" = "--short"; then
 		short=true
 	fi
-
-	# Check for git and a git repo.
+        
+        # Check for git and a git repo.
 	if test -z "$(git rev-parse --show-cdup 2>/dev/null)" &&
 	   head=$(git rev-parse --verify HEAD 2>/dev/null); then
 

@@ -2253,7 +2253,24 @@ static int cpufreq_set_policy(struct cpufreq_policy *policy,
 	ret = cpufreq_driver->verify(new_policy);
 	if (ret)
 		return ret;
+	
+        int min, max;
+        /* LIT_CLUSTER, BIG_CLUSTER, PRIME_CLUSTER - MIN/MAX FREQ */
+	if (cpumask_test_cpu(new_policy->cpu, cpu_pr_mask))
+        min = 384000;
+        max = 3187200;
+		cpufreq_verify_within_limits(new_policy, new_policy->min, max);
 
+	if (cpumask_test_cpu(new_policy->cpu, cpu_hp_mask))
+        min = 377000;
+        max = 2649600;
+		cpufreq_verify_within_limits(new_policy, new_policy->min, max);
+
+	if (cpumask_test_cpu(new_policy->cpu, cpu_lp_mask))
+        min = 300000;
+        max = 2265600;
+		cpufreq_verify_within_limits(new_policy, new_policy->min, max);
+	
 	/* adjust if necessary - all reasons */
 	blocking_notifier_call_chain(&cpufreq_policy_notifier_list,
 			CPUFREQ_ADJUST, new_policy);

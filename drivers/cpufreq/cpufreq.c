@@ -2255,13 +2255,13 @@ static int cpufreq_set_policy(struct cpufreq_policy *policy,
 		return ret;
 	
         int min, max;
-        /* LIT_CLUSTER, BIG_CLUSTER, PRIME_CLUSTER - MIN/MAX FREQ */
-	if (cpumask_test_cpu(new_policy->cpu, cpu_pr_mask))
+        /* little, big, prime - min/max freqs */
+	if (cpumask_test_cpu(new_policy->cpu, cpu_prime_mask))
         min = 384000;
         max = 3187200;
 		cpufreq_verify_within_limits(new_policy, new_policy->min, max);
 
-	if (cpumask_test_cpu(new_policy->cpu, cpu_hp_mask))
+	if (cpumask_test_cpu(new_policy->cpu, cpu_perf_mask))
         min = 377000;
         max = 2649600;
 		cpufreq_verify_within_limits(new_policy, new_policy->min, max);

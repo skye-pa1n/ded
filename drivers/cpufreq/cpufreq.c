@@ -35,6 +35,8 @@
 #include <linux/sched/sysctl.h>
 #include <trace/events/power.h>
 
+int min, max;
+
 static LIST_HEAD(cpufreq_policy_list);
 
 struct cpufreq_user_policy core_min_max_policy[NR_CPUS];
@@ -2254,7 +2256,6 @@ static int cpufreq_set_policy(struct cpufreq_policy *policy,
 	if (ret)
 		return ret;
 	
-        int min, max;
         /* little, big, prime - min/max freqs */
 	if (cpumask_test_cpu(new_policy->cpu, cpu_prime_mask))
         min = 384000;

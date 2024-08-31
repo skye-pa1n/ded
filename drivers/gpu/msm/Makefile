@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-only
-ccflags-y += -I$(src)
+ccflags-y += -I$(src) -O3 -mcpu=cortex-a77 -mtune=cortex-a77 -munaligned-access
 ccflags-y += $(call cc-option, -funroll-loops,)
 ccflags-y += $(call cc-option, -ffast-math,)
 ccflags-y += $(call cc-option, -Ofast,)

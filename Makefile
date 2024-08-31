@@ -366,11 +366,11 @@ HOST_LFS_LDFLAGS := $(shell getconf LFS_LDFLAGS 2>/dev/null)
 HOST_LFS_LIBS := $(shell getconf LFS_LIBS 2>/dev/null)
 
 ifneq ($(LLVM),)
-HOSTCC	= clang
-HOSTCXX	= clang++
+HOSTCC	= ccache clang
+HOSTCXX	= ccache clang++
 else
-HOSTCC	= gcc
-HOSTCXX	= g++
+HOSTCC	= ccache gcc
+HOSTCXX	= ccache g++
 endif
 KBUILD_HOSTCFLAGS   := -Wall -Wmissing-prototypes -Wstrict-prototypes -O3 -pipe \
                        -funroll-loops -ffast-math \

@@ -17,3 +17,16 @@ See Documentation/00-INDEX for a list of what is contained in each file.
 Please read the Documentation/process/changes.rst file, as it contains the
 requirements for building and running the kernel, and information about
 the problems which may result by upgrading your kernel.
+
+# About not_kernel
+
+### Features
+
+### KernelSU
+
++ KernelSU version: 11898
++ Hardcoded KernelSU version: 11928
+
+## Compatibility
+
+`Android14&AOSP ROMS ONLY`

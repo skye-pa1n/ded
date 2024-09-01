@@ -3,7 +3,7 @@
 LLVM_PATH="$(pwd)/prebuilts/clang/bin/"
 TC_PATH="$(pwd)/prebuilts/clang/bin/"
 GCC_PATH="/usr/bin/"
-KERNEL_NAME=not-pa1n!
+KERNEL_NAME=not
 MAKE="./makeparallel"
 BUILD_ENV="CC=${TC_PATH}clang CROSS_COMPILE=${GCC_PATH}aarch64-linux-gnu- LLVM=1 LLVM_IAS=1 PATH=$LLVM_PATH:$LLD_PATH:$PATH"  
 

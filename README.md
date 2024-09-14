@@ -21,7 +21,7 @@ the problems which may result by upgrading your kernel.
 # About not_kernel
 
 ### Features
-
++ a LOT of smol tweaks here and there
 ### KernelSU
 
 + KernelSU version: 11898
@@ -29,4 +29,4 @@ the problems which may result by upgrading your kernel.
 
 ## Compatibility
 
-`Android14&AOSP ROMS ONLY`
+`Android14 AOSP ROMS ONLY`

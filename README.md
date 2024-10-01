@@ -20,6 +20,7 @@ the problems which may result by upgrading your kernel.
 
 # About not_kernel
 Focused on **not**hing, not_kernel is highly customizable.
+The kernel parameters are fully customizable.
  
 ### KernelSU
 

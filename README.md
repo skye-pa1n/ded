@@ -21,7 +21,8 @@ the problems which may result by upgrading your kernel.
 # About not_kernel
 
 ### Features
-+ a LOT of smol tweaks here and there
++ Focused on **not**thing
+ 
 ### KernelSU
 
 + KernelSU version: 11898

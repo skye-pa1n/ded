@@ -21,7 +21,7 @@ the problems which may result by upgrading your kernel.
 # About not_kernel
 
 ### Features
-+ Focused on **not**thing
++ Focused on **not**hing
  
 ### KernelSU
 

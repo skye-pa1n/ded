@@ -19,9 +19,7 @@ requirements for building and running the kernel, and information about
 the problems which may result by upgrading your kernel.
 
 # About not_kernel
-
-### Features
-+ Focused on **not**hing
+Focused on **not**hing, not_kernel is highly customizable.
  
 ### KernelSU
 

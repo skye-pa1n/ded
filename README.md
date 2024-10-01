@@ -31,3 +31,8 @@ the problems which may result by upgrading your kernel.
 ## Compatibility
 
 `Android14 AOSP ROMS ONLY`
+aka.
+- Lineage
+- CrDroid
+- RisingOS
+- EvolutionX
